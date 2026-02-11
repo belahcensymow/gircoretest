@@ -5,16 +5,17 @@ using System.Runtime.InteropServices;
 
 internal class Program
 {
+    [STAThread]
     private static int Main(string[] args)
     {
+        string baseDir = AppContext.BaseDirectory;
         if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
         {
-            var baseDir = AppContext.BaseDirectory;
-            // Tells GTK where the icons and themes are
+            CreateAliasesHelper.EnsureAliasesExist(baseDir);
             Environment.SetEnvironmentVariable("XDG_DATA_DIRS", baseDir);
-            // Tells GLib where the settings schemas (gschemas.compiled) are
             Environment.SetEnvironmentVariable("GSETTINGS_SCHEMA_DIR", Path.Combine(baseDir, "share", "glib-2.0", "schemas"));
         }
+
         var app = Adw.Application.New("com.Belahcensymow.gircoretest", ApplicationFlags.FlagsNone);
         app.OnActivate += (sender, args) =>
         {

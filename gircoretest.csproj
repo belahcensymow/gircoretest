@@ -1,26 +1,27 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>WinExe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Platforms>x64</Platforms>
-    <RuntimeIdentifier Condition="$([MSBuild]::IsOSPlatform('Windows'))">win-x64</RuntimeIdentifier>
     <SelfContained>true</SelfContained>
     <ErrorOnDuplicatePublishOutputFiles>false</ErrorOnDuplicatePublishOutputFiles>
+    <DebugType>None</DebugType>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="GirCore.Adw-1" Version="0.7.0" />
-    
-    <Content Include="Levels\**\*.*">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-  </ItemGroup>
 
-  <ItemGroup Condition="$([MSBuild]::IsOSPlatform('Windows'))">
     <Content Include="libs\win-x64\*.dll">
+      <Link>%(Filename)%(Extension)</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <Visible>false</Visible>
+    </Content>
+
+    <Content Include="libs\win-x64\*.exe">
+      <Link>%(Filename)%(Extension)</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>false</Visible>
     </Content>
@@ -30,30 +31,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <Visible>false</Visible>
     </Content>
+
+    <Content Include="Levels\**\*.*">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
-
-  <Target Name="CreateLibAliases" AfterTargets="Build;Publish" Condition="$([MSBuild]::IsOSPlatform('Windows'))">
-    <ItemGroup>
-      <Alias Include="gtk-4-1.dll"><NewName>libgtk-4-1.dll</NewName></Alias>
-      <Alias Include="adwaita-1-0.dll"><NewName>libadwaita-1-0.dll</NewName></Alias>
-      <Alias Include="glib-2.0-0.dll"><NewName>libglib-2.0-0.dll</NewName></Alias>
-      <Alias Include="gobject-2.0-0.dll"><NewName>libgobject-2.0-0.dll</NewName></Alias>
-      <Alias Include="gio-2.0-0.dll"><NewName>libgio-2.0-0.dll</NewName></Alias>
-      <Alias Include="gmodule-2.0-0.dll"><NewName>libgmodule-2.0-0.dll</NewName></Alias>
-      <Alias Include="gthread-2.0-0.dll"><NewName>libgthread-2.0-0.dll</NewName></Alias>
-      <Alias Include="graphene-1.0-0.dll"><NewName>libgraphene-1.0-0.dll</NewName></Alias>
-      <Alias Include="pango-1.0-0.dll"><NewName>libpango-1.0-0.dll</NewName></Alias>
-      <Alias Include="pangocairo-1.0-0.dll"><NewName>libpangocairo-1.0-0.dll</NewName></Alias>
-      <Alias Include="cairo-2.dll"><NewName>libcairo-2.dll</NewName></Alias>
-      <Alias Include="cairo-gobject-2.dll"><NewName>libcairo-gobject-2.dll</NewName></Alias>
-      <Alias Include="gdk_pixbuf-2.0-0.dll"><NewName>libgdk_pixbuf-2.0-0.dll</NewName></Alias>
-    </ItemGroup>
-
-    <Exec Condition="Exists('$(OutDir)%(Alias.Identity)') AND !Exists('$(OutDir)%(Alias.NewName)')"
-          Command="mklink /H &quot;$(OutDir)%(Alias.NewName)&quot; &quot;$(OutDir)%(Alias.Identity)&quot;" />
-
-    <Exec Condition="'$(PublishDir)' != '' AND Exists('$(PublishDir)%(Alias.Identity)') AND !Exists('$(PublishDir)%(Alias.NewName)')"
-          Command="mklink /H &quot;$(PublishDir)%(Alias.NewName)&quot; &quot;$(PublishDir)%(Alias.Identity)&quot;" />
-  </Target>
 
 </Project>

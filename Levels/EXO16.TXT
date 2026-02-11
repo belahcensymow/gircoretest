@@ -1,0 +1,17 @@
+La loi de Murphy, plus généralement connue sous le nom de "loi de l'emm...
+maximum", s'exprime dans sa forme la plus générale par : "S'il existe une
+possibilité que cela aille mal, elle se produira". Cette loi, également
+appelée "loi de la tartine de beurre" (car il est bien connu qu'une tartine
+tombe toujours du côté du beurre), a de nombreux corollaires, dont nous
+citerons quelques-uns :
+- Tout fil coupé à la longueur est trop court.
+- Tout outil qui échappe des mains tombe à l'endroit le plus inaccessible
+ou sur la pièce la plus fragile (loi de la gravité sélective).
+- Le téléphone sonne pendant que vous êtes sous la douche.
+- Tout programme informatique tend à croître jusqu'à excéder les capacités
+des personnes chargées de le maintenir.
+- Les machines ne sont pas fiables, mais les êtres humains sont encore
+moins fiables.
+-L'efficacité d'un comité décroît comme le carré du nombre de ses membres.
+etc.
+Et encore, d'après la sagesse populaire: "Murphy était un optimiste..."

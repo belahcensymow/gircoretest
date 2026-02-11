@@ -1,0 +1,74 @@
+Logiciel de traitement de texte
+Critères d'évaluation.
+Au cours de la réunion de direction du département, mardi 8 février,
+l'acquisition d'un nouveau logiciel de traitement de texte a été évoquée et
+les critères d'évaluation suivants ont été définis :
+1. Facilité d'apprentissage et d'utilisation
+Aucun budget de formation sur l'utilisation d'un système de traitement de
+texte n'étant disponible, le système choisi doit être accessible à tous en
+apprentissage autodidacte. Il sera particulièrement important d'éviter les
+logiciels qui utilisent des séquences de code difficiles à retenir, ou
+imposent des commandes de style ordinateur. L'accessibilité à un guide en
+permanence améliorerait considérablement la phase d'apprentissage. Il a
+été rappelé que pour un grand nombre de personnes l'utilisation du
+traitement de texte sera aussi la première confrontation avec un
+ordinateur.
+2. Matériel
+C'est notre ordinateur personnel avec MS-DOS qui supportera le logiciel de
+traitement de texte. Celui que nous choisirons ne devra nécessiter aucune
+modification du matériel ou du système d'exploitation. La Souris Microsoft
+devant être ajoutée à certains de nos ordinateurs, il serait souhaitable
+que le traitement de texte puisse en bénéficier.
+Le traitement de texte doit être capable de sortir sur notre imprimante
+habituelle. Gardez à l'esprit que nous pourrons ajouter des imprimantes à
+laser (et une photocomposeuse) ultérieurement dans l'année, et que ces
+périphériques nécessitent une grande précision dans le positionnement des
+caractères.
+3. Types de documents
+Une évaluation rapide, informelle des documents produits par tous nos
+traitements de texte a montré que ceux-ci peuvent être répartis en trois
+groupes principaux.
+- Correspondance : lettres et notes, généralement de 1 à 2 pages de long,
+avec, le plus souvent, un format standard pour l'en-tête, le corps et la
+fin.
+- Contrats : de six à dix pages sur du papier de format administratif.
+Principalement composés de textes standard préparés à l'avance et quelques
+phrases spécifiques qui s'y glissent. Des annexes (particulières à chaque
+contrat) sont généralement placées à la fin.
+- Propositions : ce type de document représente notre travail de tt le
+plus important. Une proposition peut aller de quelques pages à la taille
+d'un livre. Dans certains cas, une étude approfondie peut nécessiter la
+présentation de données, sous la forme de graphiques ou de tableaux.
+En dehors des problèmes spécifiques à chacun, ces divers documents mettent
+en évidence la nécessité d'exigences générales. Le tt devra être capable
+de lire des données provenant d'autres programmes. Il devra être facile de
+recopier du texte d'un contrat dans un autre et, si possible, de les voir
+tous les deux en même temps sur l'écran. Les diagrammes étant fréquents
+dans nos propositions, ils devront pouvoir être manipulés facilement. De
+plus, la plupart de nos documents ayant une présentation standardisée, il
+serait utile que le tt puisse "mémoriser" cette présentation, lorsqu'il
+passe d'un document à un autre.
+4. Tt : édition et mise en forme
+Les utilisateurs de tt ont été interrogés sur les caractéristiques les
+plus appréciées. Priorité absolue: la possibilité de mettre en forme le
+texte sur l'écran  et de l'imprimer exactement tel que vous le voyez, ceci
+signifie que vous avez un "écran vivant". Vous pouvez voir, ce que vous
+êtes en train de taper, les modifications que vous apportez au fur et à
+mesure que vous les faites et, bien plus important encore, la mise en
+forme de votre document avant l'impression.
+Naturellement les fonctions de frappe et d'édition doivent comprendre, le
+renvoi à la ligne, la recherche et le remplacement, la recopie et le
+déplacement de blocs, la possibilité d'avoir des glossaires et le
+déplacement facile à l'intérieur de longs documents.
+Pour la mise en forme des textes, les personnes concernées par le tt nous
+ont donné "leurs souhaits" dans la liste qui suit :
+- centrage
+- justification
+- mise en valeur : soulignement, gras, italiques
+- souplesse du tableautage
+- pages de longueur et largeur variables
+- notes en bas de page
+- titres courants
+- numérotation des pages
+- exposants et indices
+- retrait (et composition en sommaire)     
